@@ -130,6 +130,125 @@
   </div>
   <button type="submit" class="btn btn-primary">提交</button>
 </form>
+	<hr>
+	<h2>輸入欄位</h2>
+<form>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Username">
+    <span class="input-group-text" id="addon2">@example.com</span>
+  </div>
+</form>
+	<hr>
+	<h2>多行文字方塊</h2>
+	<form>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Username">
+    <span class="input-group-text" id="addon2">@example.com</span>
+  </div>
+</form>
+	<hr>
+	<h2>核取方塊</h2>
+
+<form>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="CK1" id="CK1">
+    <label class="form-check-label" for="CK1">鬼滅之刃</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="CK2" id="CK2" checked>
+    <label class="form-check-label" for="CK2">進擊的巨人</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="CK3" id="CK3" disabled>
+    <label class="form-check-label" for="CK3">食戟之靈</label>
+  </div>
+</form>
+	<hr>
+<h2>搭配網格類別</h2>
+	01<form class="row g-2">
+  <div class="col-sm-6">
+    <label for="userEmail" class="form-label">Email</label>
+    <input type="email" class="form-control" id="userEmail">
+  </div>
+  <div class="col-sm-6">
+    <label for="userPWD" class="form-label">密碼</label>
+    <input type="password" class="form-control" id="userPWD">
+  </div>
+
+  <div class="col-12">
+    <label for="userAddr" class="form-label">地址</label>
+    <input type="text" class="form-control" id="userAddr">
+  </div> 
+
+  <div class="col-sm-6">
+    <label for="userCity" class="form-label">縣市</label>
+    <input type="text" class="form-control" id="userCity">
+  </div>
+ <div class="col-sm-4">
+    <label for="userTown" class="form-label">鄉鎮</label>
+    <select id="userTown" class="form-select">
+      <option selected>選擇居住鄉鎮...</option>
+     <option>...</option>
+   </select>
+  </div>
+  <div class="col-sm-2">
+    <label for="userZip" class="form-label">郵遞區號</label>
+    <input type="text" class="form-control" id="userZip">
+  </div>
+
+ <div class="col-12">
+    <button type="submit" class="btn btn-primary">登入</button>
+  </div>
+</form>
+	<hr>
+	<h2>水平表單</h2>
+	<form>
+  <div class="row mb-3">
+    <label for="userEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="userEmail">
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="userPWD" class="col-sm-2 col-form-label">密碼</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="userPWD">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">登入</button>
+</form>
+<hr>
+	<h2>行內表單</h2>
+	<form class="row row-cols-sm-auto g-2 align-items-center">
+  <div class="col-12">
+    <select class="form-select" id="userCity">
+      <option selected>選擇居住城市...</option>
+      <option value="1">台北市</option>
+      <option value="2">高雄市</option>
+      <option value="3">其它</option>
+    </select>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="rememberMe">
+      <label class="form-check-label" for="rememberMe">記住我</label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+
 
 </body>
 </html>
