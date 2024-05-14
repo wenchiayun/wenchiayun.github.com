@@ -32,6 +32,46 @@
     </div>
   </div>
 </div>
+	<hr>
+	<h2>工具提示</h2>
+	<div class="container text-center">  
+	  <img src="flowers3.jpg" width="70%" class="img-fluid"><br>
+	  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" 
+    data-bs-placement="top" title="太陽花">在上方顯示工具提示</button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+    data-bs-placement="bottom" title="太陽花">在下方顯示工具提示</button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+    data-bs-placement="left" title="太陽花">在左方顯示工具提示</button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+    data-bs-placement="right" title="太陽花">在右方顯示工具提示</button>	
+</div>
+
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  });
+</script>
+	<hr>
+	<h2>彈出提示</h2>
+	<div class="container text-center">
+  <img src="flowers3.jpg" width="50%" class="img-fluid"><br>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" 
+    data-bs-toggle="popover" data-bs-placement="top" data-bs-content="太陽花">
+    在上方顯示彈出提示</button>
+
+  <button type="button" class="btn btn-secondary" title="圖片標題" 
+    data-bs-toggle="popover" data-bs-placement="right" data-bs-content="太陽花">
+    在右側顯示彈出提示</button>
+
+<script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  });
+</script>
+
+
 
 </body>
 </html>
